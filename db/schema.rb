@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20180307025819) do
 
-  create_table "links", force: :cascade do |t|
+  create_table "links", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "url"
     t.text "description"
     t.datetime "created_at", null: false
